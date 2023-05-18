@@ -1,6 +1,29 @@
 # Road Network Refinemwnt using GNNs
 
+Using Graph Neural Networks to refine generated road networks. GNNs perform node 
+classification, to remove invalid verties such as vertices on buildings, water bodies
+and greeneries. 
 
+Imitation learning explores the most generates the most roads however, it also
+generates the most invalid vertices especially on water bodies. RNGDet is used a the example here. 
+
+## Ground truth
+
+Magenta represents valid points , red points represents invalid points. Cyan represents road network. 
+
+![Invalid points on water](static/11_invver_gt.png)
+![Invalid points on greenery](static/0_invver_pred.png)
+
+
+## Prediction
+
+Magenta represents predicted  valid points , red points represents predicted invalid points. Cyan represents road network. 
+
+![Invalid points on water](static/11_invver_pred.png)
+![Invalid points on greenery](static/0_invver_pred.png)
+
+
+The following requires th road networks generated from RNGDet, and then the enerated dataset can be used for training this GNN, please replace the paths in respective filepaths. 
 
 ## Pre Requisites
 
